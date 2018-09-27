@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Journey-tips</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaStyle.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="js/main.js" defer></script>
+	<script src="js/mainJQ.js" defer></script>
+	<script src="js/wow.min.js" async></script>
+</head>
+<body>
+	<div id="preloader">
+		<img src="img/preloader1.gif" alt="">
+	</div>
+	<main>
+
+			<!-- header -->
+		<header>
+			<div class="headerFlex wow fadeInDown">
+				<div class="logo">
+					<H1>journey t<img src="svg/i.svg" alt="">ps</H1>
+					<p>Your personal free e-guide</p>
+				</div>
+				<form method="POST" autocomplete="off" class="headerForm">
+					<label class="headerLabel">Enter Cities Name</label>
+					<input type="text" name="city" class="headerInput city">
+					<button type="submit" class="btnContent headerBtn">Get a free guide</button>
+				</form>
+				<div class="scrollDown">
+					<a href=".content">
+						<span>Scroll Down</span>
+						<p><img src="svg/downArrow.svg" alt="" class="downArrow"></p>
+					</a>
+				</div>
+			</div>
+		</header>
+			
+			<!-- content -->
+		<div class="content">
+			<nav>
+				<div class="logo">
+					<H2>journey t<img src="svg/i.svg" alt="">ps</H2>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="header">Get a free guide</a></li>
+						<li><a href=".box1">Why choose us</a></li>
+						<li><a href=".box5">Reviews</a></li>
+						<li><a href="footer">Contact us</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="box">
+				<div class="close">
+					<img src="svg/close.svg" alt="">
+				</div>
+				<div class="get">
+					<nav class="navContainer" id="navContainer">
+						<div class="logo">
+							<H2>journey t<img src="svg/i.svg" alt="">ps</H2>
+						</div>
+						<div class="menu">
+							<ul>
+								<li><a href=".gallery">City Gallery</a></li>
+								<li><a href=".cityInfo">Info</a></li>
+								<li><a href="#">Hottels</a></li>
+								<li><a href="#">Hostels</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="info">
+					</div>
+				</div>
+			</div>
+
+			<div class="box1">
+				<div class="opacity">
+					<div class="textContent">
+						<span class="title">Why Choose Us</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, neque. Repudiandae libero explicabo aperiam enim quasi sit nemo quod aliquid temporibus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque adipisci sint assumenda magni accusantium.</p>
+						<button type="button" class="btnContent">Get a free guide</button>
+					</div>
+					<div class="imgContent">
+						<img src="img/1.jpg" alt="" class="wow fadeInRight">
+						<img src="img/2.jpg" alt="" class="wow fadeInRight" data-wow-delay="0.2s">
+					</div>
+				</div>
+			</div>
+
+			<div class="box2">
+				<section>
+					<div>
+						<img src="svg/search2.svg" alt="" class="wow bounceIn">
+						<p>Search Places</p>
+					</div>
+					<div>
+						<img src="svg/complete.svg" alt="" class="wow bounceIn" data-wow-delay="0.1s">
+						<p>Select Places</p>
+					</div>
+					<div>
+						<img src="svg/like.svg" alt="" class="wow bounceIn" data-wow-delay="0.2s">
+						<p>Book & Enjoy</p>
+					</div>
+				</section>
+			</div>
+
+			<div class="box3">
+				<div class="section wow fadeInLeft">
+					<span>Canada</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem quisquam repellendus labore ipsa, quia molestias officia adipisci fugiat placeat. Minima sunt magni totam</p>
+					<span class="title">Niagara Falls</span>
+					<button type="button" class="btnContent">Get a free guide</button>
+				</div>
+			</div>
+
+			<div class="box4">
+				<div class="section wow fadeInRight">
+					<span>Australia</span>
+					<span class="title">Great Barrier Reef</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem quisquam repellendus labore ipsa, quia molestias officia adipisci fugiat placeat. Minima sunt magni totam</p>
+					<button type="button" class="btnContent">Get a free guide</button>
+				</div>
+			</div>
+
+			<div class="box5">
+				<!-- <div class="addReview"></div> -->
+				<div class="reviewBox">
+					<div class="review">
+						<img src="img/reviewImg1.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur</p>
+					</div>
+					<div class="review">
+						<img src="img/reviewImg2.jpeg" alt="">
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="review">
+						<img src="img/reviewImg3.jpeg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, fugas</p>
+					</div>
+					<div class="review">
+						<img src="img/reviewImg4.jpeg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+		</div>
+
+		<!-- footer -->
+	<footer>
+		<div class="footerOpacity">
+			<div class="left">
+					<div class="logo">
+						<H2>journey t<img src="svg/i.svg" alt="">ps</H2>
+						<p>Get exclusive free travel tips in our destination-specific e-guides</p>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com"><img src="img/facebook.png" alt=""></a>
+						<a href="https://twitter.com"><img src="img/twitter.png" alt=""></a>
+						<a href="https://www.linkedin.com"><img src="img/linkedin.png" alt=""></a>
+						<a href="https://www.youtube.com"><img src="img/youtube.png" alt=""></a>
+						<a href="https://www.pinterest.com"><img src="img/pinterest.png" alt=""></a>
+					</div>
+					<div class="telephones">
+						<p>+38 068 345 57 50</p>
+						<p>+38 099 474 16 82</p>
+					</div>
+					<div class="adress">
+						<p>Victory Avenue 117</p>
+					</div>
+				</div>
+			<div class="right">
+				<form method="POST" autocomplete="off">
+					<div class="inputBox">
+						<label class="labelBox">Name</label>
+						<input type="text" id="name" name="name" class="footerInput">
+					</div>
+					<div class="inputBox">
+						<label class="labelBox">Email</label>
+						<input type="email" id="email" name="@mail" class="footerInput">
+					</div>
+					<div class="inputBox textareaBox">
+						<label class="labelBox">Message</label>
+						<textarea name="message" class="footerInput"></textarea>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	</main>
+
+</body>
+</html>
