@@ -230,7 +230,9 @@ a {
 	position: fixed;
 	top: 0;
 	left: 50%;
-	transform: translate(0 -50%);
+	-webkit-transform: translate(0 -50%);
+	    -ms-transform: translate(0 -50%);
+	        transform: translate(0 -50%);
 }
 
 .box {
@@ -320,6 +322,8 @@ a {
 	content: "\f063";
 	font-family: "FontAwesome";
 	margin-right: 10px;
+	-webkit-transition: 0.3s all linear;
+	-o-transition: 0.3s all linear;
 	transition: 0.3s all linear;
 }
 
@@ -788,4 +792,8 @@ input[type=submit]:hover {
 		-ms-transform: translateY(-30px);
 			transform: translateY(-30px);
 	color: #FFF;
+}
+
+.rotate:after {
+	content: "\f062"
 }

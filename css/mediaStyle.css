@@ -191,7 +191,8 @@
 
 @media all and (max-width: 450px) {
 
-	header input {
+	header .headerInput {
+		width: unset;
 		width: 250px;
 	}
 	.logo p {
@@ -223,6 +224,12 @@
 		width: 300px;
 	}
 
+}
+
+@media all and (max-width: 370px) {
+	header .headerInput {
+		width: 200px;
+	}
 }
 
 @media all and (max-width: 350px) {
@@ -273,4 +280,3 @@
 	}
 
 }
-
