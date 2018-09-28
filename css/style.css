@@ -15,6 +15,9 @@ Version: 1.0.0
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+}
+
+body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -254,6 +257,7 @@ a {
 .get {
 	width: 70%;
 	min-height: 80%;
+	max-height: 90%;
 	z-index: 11;
 }
 
@@ -277,13 +281,14 @@ a {
 }
 
 .info {
-	background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-family: 'Roboto', sans-serif;
 }
 
 .shortDescription {
 	width: 90%;
 	margin: 0 auto;
-	padding-top: 5%;
+	padding-top: 2%;
 	line-height: 25px;
 }
 
@@ -315,28 +320,19 @@ a {
 	content: "\f063";
 	font-family: "FontAwesome";
 	margin-right: 10px;
+	transition: 0.3s all linear;
 }
 
-.row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	padding: 0 2px;
-	justify-content: space-around;
+.slick-prev {
+	left: unset;
+	left: 10px;
+	z-index: 10;
 }
 
-.column {
-	-webkit-box-flex: 25%;
-	    -ms-flex: 25%;
-	        flex: 25%;
-	max-width: 25%;
-	padding: 0 2px;
-}
-
-.column div {
-	vertical-align: middle;
+.slick-next {
+	right: unset;
+	right: 10px;
+	z-index: 10;
 }
 
 .box1 {
@@ -613,6 +609,14 @@ footer {
 
 footer .logo p {
 	display: inline;
+}
+
+footer .adress {
+	text-align: center;
+}
+
+footer .adress a {
+	text-transform: lowercase;
 }
 
 .left {

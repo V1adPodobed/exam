@@ -2,21 +2,27 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Your personal free e-guide">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Journey-tips</title>
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaStyle.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jqueryMigrate.min.js"></script>
 
 	<script src="js/main.js" defer></script>
 	<script src="js/mainJQ.js" defer></script>
 	<script src="js/wow.min.js" async></script>
+	<script src="js/slick.min.js" async></script>
 </head>
 <body>
 	<div id="preloader">
@@ -32,13 +38,13 @@
 					<p>Your personal free e-guide</p>
 				</div>
 				<form method="POST" autocomplete="off" class="headerForm">
-					<label class="headerLabel">Enter Cities Name</label>
+					<label class="headerLabel">Введите город</label>
 					<input type="text" name="city" class="headerInput city">
 					<button type="submit" class="btnContent headerBtn">Get a free guide</button>
 				</form>
 				<div class="scrollDown">
 					<a href=".content">
-						<span>Scroll Down</span>
+						<span>Прокрутите вниз</span>
 						<p><img src="svg/downArrow.svg" alt="" class="downArrow"></p>
 					</a>
 				</div>
@@ -54,9 +60,9 @@
 				<div class="menu">
 					<ul>
 						<li><a href="header">Get a free guide</a></li>
-						<li><a href=".box1">Why choose us</a></li>
-						<li><a href=".box5">Reviews</a></li>
-						<li><a href="footer">Contact us</a></li>
+						<li><a href=".box1">Почему мы</a></li>
+						<li><a href=".box5">Отзывы</a></li>
+						<li><a href="footer">Контакты</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -70,14 +76,6 @@
 						<div class="logo">
 							<H2>journey t<img src="svg/i.svg" alt="">ps</H2>
 						</div>
-						<div class="menu">
-							<ul>
-								<li><a href=".gallery">City Gallery</a></li>
-								<li><a href=".cityInfo">Info</a></li>
-								<li><a href="#">Hottels</a></li>
-								<li><a href="#">Hostels</a></li>
-							</ul>
-						</div>
 					</nav>
 					<div class="info">
 					</div>
@@ -87,7 +85,7 @@
 			<div class="box1">
 				<div class="opacity">
 					<div class="textContent">
-						<span class="title">Why Choose Us</span>
+						<span class="title">Почему мы</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, neque. Repudiandae libero explicabo aperiam enim quasi sit nemo quod aliquid temporibus.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque adipisci sint assumenda magni accusantium.</p>
 						<button type="button" class="btnContent">Get a free guide</button>
@@ -118,17 +116,17 @@
 
 			<div class="box3">
 				<div class="section wow fadeInLeft">
-					<span>Canada</span>
+					<span>Канада</span>
+					<span class="title">Ниагарский водопад</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem quisquam repellendus labore ipsa, quia molestias officia adipisci fugiat placeat. Minima sunt magni totam</p>
-					<span class="title">Niagara Falls</span>
 					<button type="button" class="btnContent">Get a free guide</button>
 				</div>
 			</div>
 
 			<div class="box4">
 				<div class="section wow fadeInRight">
-					<span>Australia</span>
-					<span class="title">Great Barrier Reef</span>
+					<span>Австралия</span>
+					<span class="title">Большой Барьерный риф</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem quisquam repellendus labore ipsa, quia molestias officia adipisci fugiat placeat. Minima sunt magni totam</p>
 					<button type="button" class="btnContent">Get a free guide</button>
 				</div>
@@ -176,13 +174,14 @@
 						<p>+38 099 474 16 82</p>
 					</div>
 					<div class="adress">
-						<p>Victory Avenue 117</p>
+						<p>Проспект Победы 117</p>
+						<a href="https://github.com/V1adPodobed/exam">https://github.com/V1adPodobed/exam</a>
 					</div>
 				</div>
 			<div class="right">
 				<form method="POST" autocomplete="off">
 					<div class="inputBox">
-						<label class="labelBox">Name</label>
+						<label class="labelBox">Имя</label>
 						<input type="text" id="name" name="name" class="footerInput">
 					</div>
 					<div class="inputBox">
@@ -190,7 +189,7 @@
 						<input type="email" id="email" name="@mail" class="footerInput">
 					</div>
 					<div class="inputBox textareaBox">
-						<label class="labelBox">Message</label>
+						<label class="labelBox">Сообщение</label>
 						<textarea name="message" class="footerInput"></textarea>
 					</div>
 					<input type="submit" value="Submit">
